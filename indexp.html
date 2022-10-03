@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/0f979fb495.js" crossorigin="anonymous"></script>
+    <title>Ryan Reid</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="#" class="nav-branding">REID</a>
+            <ul class="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#project" class="nav-link">Projects</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav> 
+    </header>
+    <div id="home" class="flex-container">
+        <div class="home-page">
+            <h6>< h1 ></h6>
+            <h1 class="title"><span class="scale">I </span><span class="scale">a</span><span class="scale">m </span><span class="scale">R</span><span class="scale">y</span><span class="scale">a</span><span class="scale">n </span><span class="scale">R</span><span class="scale">e</span><span class="scale">i</span><span class="scale">d</span><span class="scale">,</span></h2>
+            <h6>< /h1 ></h6>
+            <h6>< h2 ></h6>
+            <div class="wrapper">
+                <div class="static-txt">I'm a</div>
+                <ul class="dynamic-txts">
+                    <li><span>coder</span></li>
+                    <li><span>developer</span></li>
+                    <li><span>designer</span></li>
+                </ul>
+            </div>
+            <h6>< /h2 ></h6>
+        </div>
+    </div>
+    <a name="project"></a>
+    <div id="project" class="project-page">
+        <div class="all-items">
+            <div class="item">
+                <div class="left">
+                    <div class="img">
+                        <img src="tasklist.png" alt="project-img">
+                    </div>
+                </div>
+                <div class="right">
+                    <h4 class="project-title">Task List
+                    </h4>
+                    <h5 class="project-sub-title">Simple, yet effective.
+                    </h5>
+                    <p class="project-desc">A Simple, yet effective task list that allows 
+                                            the user to create a task, edit the task and 
+                                            delete it once completed. I wanted the color 
+                                            sceme to be consistent with my portfolio.
+                    </p>
+                    <button class="primary-btn">Github</button>
+                    <button class="primary-btn outline"><span>Try it </span><i class="fa-solid fa-share-from-square"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="left">
+                <div class="img">
+                    <img src="project-2.jpg" alt="project-img">
+                </div>
+            </div>
+            <div class="right">
+                <h4 class="project-title">Lorem ipsum, dolor sit.
+                </h4>
+                <h5 class="project-sub-title">Lorem ipsum, dolor sit.
+                </h5>
+                <p class="project-desc">Lorem ipsum dolor sit amet 
+                    consectetur adipisicing elit. Beatae, quis. 
+                    Fugiat autem tempora illo et laborum aliquam 
+                    vitae dolorem accusamus. Totam maiores cumque 
+                    dicta cum earum tenetur modi ea expedita.
+                </p>
+                <button class="primary-btn">Know more</button>
+                <button class="primary-btn outline"><span>Preview </span><i class="fa-solid fa-share-from-square"></i></button>
+            </div>
+        </div>
+        <div class="item">
+            <div class="left">
+                <div class="img">
+                    <img src="project-3.jpeg" alt="project-img">
+                </div>
+            </div>
+            <div class="right">
+                <h4 class="project-title">Lorem ipsum, dolor sit.
+                </h4>
+                <h5 class="project-sub-title">Lorem ipsum, dolor sit.
+                </h5>
+                <p class="project-desc">Lorem ipsum dolor sit amet 
+                    consectetur adipisicing elit. Beatae, quis. 
+                    Fugiat autem tempora illo et laborum aliquam 
+                    vitae dolorem accusamus. Totam maiores cumque 
+                    dicta cum earum tenetur modi ea expedita.
+                </p>
+                <button class="primary-btn">Know more</button>
+                <button class="primary-btn outline"><span>Preview </span><i class="fa-solid fa-share-from-square"></i></button>
+            </div>
+        </div>
+    </div>
+    <a name="about"></a>
+    <div id="about" class="flex-container1">
+        <div class="about-page">
+            <h2 data-outline="About me">About Me</h2>
+            <p>I am Ryan Reid. I enjoy building things in 
+               the .NET ecosystem, working on both front-end
+               and back-end. I am always striving to learn
+               new skills and become a better Software Engineer.
+            </p>
+            <br class="middle">
+            <p class="sub">My main expierence is in desktop app development 
+               and front-end web development. However, I also 
+               love creating simple yet artistic UI design.
+            </p>
+            <div class="popup" id="popup-1">
+                <div class="overlay"></div>
+                <div class="content">
+                    <div class="close-btn" onclick="togglePopup()">&times;</div>
+                </div>
+            </div>
+            <button class="resume" onclick="togglePopup()">Resume</button>
+        </div>
+    </div>
+    <a name="contact"></a>
+    <div id="contact" class="contact-container">
+        <form action="https://formsubmit.co/ryan.reid1111@gmail.com" method="POST">
+            <h3>GET IN TOUCH</h3>
+            <input type="hidden" name="_next" value="https://military-grade-dev.github.io/portfolio/thankyou.html">
+            <input type="text" name="name" id="name" placeholder="Your Name" required>
+            <input type="email" name="email" id="email" placeholder="Email" required>
+            <textarea id="message" name="textarea" rows="4" placeholder="How can I help you?"></textarea>
+            <button name="send" type="submit">Send</button>
+        </form>
+    </div>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

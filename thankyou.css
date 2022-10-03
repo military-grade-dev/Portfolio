@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+   background: #1b1b1b; 
+}
+button {
+    background-color: goldenrod;
+    border: none;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    padding: 10px 30px;
+    border-radius: 20px;
+    font-size: 20px;
+}
+h1 {
+    font-size: 40px;
+    color: #e3dac9;
+    display: block;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 40%;
+    left: 50%;
+
+}
