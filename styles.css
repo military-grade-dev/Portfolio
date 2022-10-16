@@ -214,6 +214,7 @@ h2 {
 #project .item:nth-child(even) .left {
     margin-left: -150px;
 }
+
 #project .item .left .img {
     height: 500px;
     width: 500px;
